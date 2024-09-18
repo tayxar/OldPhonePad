@@ -32,7 +32,7 @@ Solution
 - But To sort String and character, I decided to use array.
 
 
-2. Explore Sort Logic
+2. Explore Sort Logic & Build the solution with clean code
 
 - The string will have any sequence with space such as "22 33 555* 444#" , "2233 555*444#" etc.
 - 1st , to split string with space but space also need to be one of the array element. "2233 555*444#" to {"2233"," ","555*444#"}

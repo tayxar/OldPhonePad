@@ -12,7 +12,6 @@ namespace OldPhonePad
     {
         public static String OldPhonePad(string input)
         {
-            
             String Text = "";
             
             Hashtable KeyPad = Utility.InitializeKeyPad();
@@ -25,10 +24,9 @@ namespace OldPhonePad
             //Translate Number of KeyPad Clicks to alphabet
             foreach (string key in matchCharList) {
 
-                
                 char[] charArray = key.ToCharArray();
-                
                 string alphabet= "";
+
                 foreach (char c in charArray) {
 
                     switch (c) {
@@ -36,7 +34,6 @@ namespace OldPhonePad
                         case '1':
                             alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
                             break;
-
 
                         case '2':
                             alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
@@ -85,7 +82,6 @@ namespace OldPhonePad
                             break;
                     }
                     
-
                 }
                 Text = Text + alphabet;
 
@@ -93,11 +89,5 @@ namespace OldPhonePad
 
            return Text;
         }
-
-        
-
-       
-
-
     }
 }

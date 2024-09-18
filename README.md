@@ -26,13 +26,13 @@ OldPhonePad(“4433555 555666#”) => output: HELLO
 OldPhonePad(“8 88777444666*664#”) => output: ?????
 
 1. Decide most suitable Collection Class 
-=========================================
+===============================================
 First I think what collection to use List, Array or Hashtable. To create with List I need to create class and obj to put in List. This might result messy code.
 Since the question is simple and just to pair the values with each Key, I decided to work with Hashtable.
 But To sort String and character, I decided to use array.
 
 3. Explore Sort Logic
-===========================================
+===============================================
 The string will have any sequence with space such as "22 33 555* 444#" , "2233 555*444#" etc.
 1st , to split string with space but space also need to be one of the array element. "2233 555*444#" to {"2233"," ","555*444#"}
 2nd, to split string by matching character.  {"2233"," ","555*444#"} to {"22","33"," ","555","*","444","#}
@@ -44,7 +44,7 @@ The string will have any sequence with space such as "22 33 555* 444#" , "2233 5
 8th, to build the string loop by loop, tempKey is used and later after each inside loop, I added to main result string.
 
  4. Testing
-============================================
+=================================================
 I tested with space
 I tested with many *
 I tested with a long key input

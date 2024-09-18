@@ -44,50 +44,50 @@ namespace OldPhonePad
                 // split each string in keys into char (Logically {"333"} will become {'3','3','3'})
                 char[] charArray = key.ToCharArray();
                 
-                string rkey= "";
+                string tempKey= "";
                 foreach (char c in charArray) {
 
                     switch (c) {
 
                         case '1':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
 
                         case '2':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '3':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '4':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '5':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '6':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '7':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '8':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '9':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '0':
-                            rkey = SearchHashTableWithKey(c, KeyPad, charArray);
+                            tempKey = SearchHashTableWithKey(c, KeyPad, charArray);
                             break;
 
                         case '*':
@@ -103,7 +103,7 @@ namespace OldPhonePad
                     
 
                 }
-                result = result + rkey;
+                result = result + tempKey;
 
 
             }

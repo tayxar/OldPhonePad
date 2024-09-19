@@ -1,19 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OldPhonePad;
 
+Console.WriteLine("--- Key Pad Phone System ---");
+Console.WriteLine("--- (Please Enter 'x' to exist from system!) ---");
+Console.WriteLine();
+Console.Write("Please enter number keys : "); String Input = Console.ReadLine();
 
-Console.Write("Please enter number keys : "); String NumKey = Console.ReadLine();
 
-if (Utility.IsInputValid(NumKey))
+while(Input != "x") { 
+
+if (Utility.IsInputValid(Input))
 {
-    Console.WriteLine("Answer is : " + Phone.OldPhonePad(NumKey));
+    Console.WriteLine("Answer is : " + Phone.OldPhonePad(Input));
 }
 else
 {
     Console.WriteLine("Invalid Input");
 }
 
-Console.ReadKey();
+    Console.Write("Please enter number keys : "); Input = Console.ReadLine();
+}
 
 
 

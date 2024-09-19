@@ -22,53 +22,53 @@ namespace OldPhonePad
             List<String> matchCharList = Utility.ReturnMatchCharList(inputArrayWithoutSpace);
             
             //Translate Number of KeyPad Clicks to alphabet
-            foreach (string key in matchCharList) {
+            foreach (string element in matchCharList) {
 
-                char[] charArray = key.ToCharArray();
+                char[] sameCharGroup = element.ToCharArray();
                 string alphabet= "";
 
-                foreach (char c in charArray) {
+                foreach (char c in sameCharGroup) {
 
                     switch (c) {
 
                         case '1':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '2':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '3':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '4':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '5':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '6':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '7':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '8':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '9':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '0':
-                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, charArray);
+                            alphabet = Utility.TranslateWithClickTimes(c, KeyPad, sameCharGroup);
                             break;
 
                         case '*':

@@ -37,7 +37,7 @@ Solution
 - User cannot type in any other character except from 0 to 9, # and *.
 
 
-2. Explore Sort Logic & Build the solution with clean code
+3. Explore Sort Logic & Build the solution with clean code
 
 - Utility static class will have 3 module for Initialized KeyPad, InputChecking, ReturnMatchCharList, TranslationOfKeyClickTimes Module.
 - The string will have any sequence with space such as "22 33 555* 444#" , "2233 555*444#" etc.
@@ -49,7 +49,7 @@ Solution
 - 7th, to build the string loop by loop, tempKey is used and later after each inside loop, I added to main result string.
 
 
- 3. Testing
+ 4. Testing
 
 - I tested with space
 - I tested with many *
